@@ -2,7 +2,7 @@ import Button from "../components/Shared/Button";
 
 export default function Confirm() {
     return (
-        <div className='w-dvw h-dvh relative'>
+        <div className='max-w-dvw h-dvh relative'>
             <div className='flex h-full items-center px-24'>
                 <div className='w-1/3'>
                     <div className='w-full mb-3'>
