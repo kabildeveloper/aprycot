@@ -15,7 +15,7 @@ export default function Sidebar() {
         link: '/sign-in'
     },{
         title: 'Sign up',
-        link: '/signup'
+        link: '/sign-up'
     },{
         title: 'Email',
         link: '/email'
