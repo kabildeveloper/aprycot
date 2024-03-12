@@ -1,0 +1,16 @@
+.user-profile-banner {
+    @apply bg-center bg-cover rounded-3xl overflow-clip;
+    background-image: url("/assets/user-profile-banner.png");
+}
+
+.banner-metrics {
+    @apply bg-[var(--primary-color)] text-white w-[75px] rounded-xl h-[80px] flex flex-col items-center justify-center;
+}
+
+.banner-metrics p:first-child {
+    @apply font-semibold mb-2
+}
+
+.banner-metrics p:nth-child(2) {
+    @apply font-normal text-sm
+}

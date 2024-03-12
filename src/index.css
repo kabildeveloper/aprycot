@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /*font-family: "Poppins", "Playfair Display",Inter, system-ui, Avenir, Helvetica, Arial, sans-serif, serif;*/
+  font-family: "Poppins", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --primary-color: #EA6A12;
+  --primary-border: #FBE1D0;
+
+  /*font-synthesis: none;*/
+  /*text-rendering: optimizeLegibility;*/
+  /*-webkit-font-smoothing: antialiased;*/
+  /*-moz-osx-font-smoothing: grayscale;*/
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  background-color: #fbf9f0;
+  /*background-color: #fff6f0;*/
+}
+
+.playfair-font {
+  font-family: "Playfair Display", serif;
+}
+
+/* Start of Home ****************************************************************************************************************** */
+.banner {
+   @apply flex flex-col md:flex-row gap-10;
+}
+
+.banner .deal {
+  @apply  w-full md:w-2/3 bg-no-repeat bg-cover bg-center flex flex-col gap-y-6 p-20 rounded-3xl ;
+  background-image: url("/assets/banner.png");
+}
+
+/* End of Home ****************************************************************************************************************** */
+
+.swiper-slide{
+  width: fit-content !important;
+}
+
+
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+  scrollbar-width: thin;
+  scrollbar-color: #FBC391 #FBF9F0;
+}*/
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #FBF9F0;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #FBF9F0;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #FBF9F0;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #FBC391;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #F16D13;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #F26E13;
+}
+
+.form-group {
+  @apply px-2
+}
+
+.form-group label {
+  @apply mb-2 text-gray-500
+}
+
+.form-group input {
+  @apply
+    px-4 py-2 w-full
+    border rounded-full border-[#EA6A12]
+}

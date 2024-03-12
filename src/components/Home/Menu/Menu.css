@@ -1,0 +1,18 @@
+.menu {
+    @apply
+        bg-white
+        p-6
+        rounded-3xl
+        flex flex-col items-center
+        transition-all duration-200
+}
+
+.menu:hover, .menu-active {
+    @apply
+        bg-[var(--primary-color)]
+        opacity-70
+        [&>p]:text-white
+        [&>.arrow-icon]:bg-white
+        [&>.arrow-icon]:text-[var(--primary-color)]
+        [&>.line]:border-white
+}

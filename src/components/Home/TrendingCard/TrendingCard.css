@@ -1,0 +1,16 @@
+.trending-card {
+    @apply
+        hover:bg-[var(--primary-color)]
+        hover:opacity-70
+        [&>*]:hover:text-white
+        transition-all
+        duration-200
+}
+
+.trending-card-wrapper:hover img {
+    @apply shadow-2xl shadow-amber-600 transition-all duration-200
+}
+
+.trending-card:hover .sm-btn {
+    @apply bg-white text-[var(--primary-color)]
+}

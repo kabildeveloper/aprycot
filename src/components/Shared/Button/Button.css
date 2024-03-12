@@ -1,0 +1,21 @@
+.btn {
+    @apply py-3 px-6 text-white rounded-full;
+    background-color: var(--primary-color);
+}
+
+.btn.outlined {
+    @apply bg-transparent text-[var(--primary-color)] border border-[var(--primary-color)] transition-all duration-200
+}
+
+.btn.outlined:hover {
+    @apply text-white;
+    background-color: var(--primary-color);
+}
+
+.btn.disabled {
+    @apply cursor-not-allowed bg-gray-400;
+}
+
+.btn.sm {
+    @apply py-2;
+}

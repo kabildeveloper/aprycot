@@ -1,0 +1,45 @@
+.sub-menu {
+    @apply
+        w-full
+}
+
+.sub-menu:hover .sub-menu-content {
+    @apply
+        bg-[var(--primary-color)]
+        opacity-70
+        text-white
+
+}
+
+.sub-menu:hover .rating-fill > svg {
+    fill: white;
+}
+
+.sub-menu:hover .sub-menu-action-bar > .value {
+    @apply text-white
+}
+
+.sub-menu:hover .sub-menu-action-bar > .sm-btn {
+    @apply
+        bg-white
+        text-[var(--primary-color)]
+}
+
+
+.sub-menu-img-container {
+    @apply px-10 w-full mb-[-32%]
+}
+
+.sub-menu-img-container img {
+    @apply rounded-full relative shadow-2xl z-10
+}
+
+.sub-menu-content {
+    @apply w-full rounded-3xl bg-white p-6 pt-[45%] transition-all
+    duration-200
+}
+
+.sub-menu-action-bar {
+    @apply flex items-center justify-between mt-6
+}
+

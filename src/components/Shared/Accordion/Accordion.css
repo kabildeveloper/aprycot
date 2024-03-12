@@ -1,0 +1,15 @@
+.accordion-header {
+    @apply
+        select-none
+        h-[52px]
+        rounded-full
+        flex items-center
+        justify-between
+        bg-opacity-60
+        transition-all
+        duration-200
+        cursor-pointer
+        hover:bg-orange-100
+        [&>*]:hover:text-orange-500
+        [&>div>.icon]:hover:text-orange-500
+}
